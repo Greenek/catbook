@@ -1,0 +1,7 @@
+{
+  "name": "Catbook",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
