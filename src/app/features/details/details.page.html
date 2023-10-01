@@ -1,0 +1,72 @@
+<ng-container *ngIf="cat$ | async as cat">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/tabs/list"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{ cat.name }}</ion-title>
+  </ion-toolbar>
+  <ion-content>
+    <img [alt]="cat.name" [src]="cat.image" class="details__image" />
+
+    <ion-card>
+      <ion-card-header>
+        <ion-card-title>{{ cat.name }}</ion-card-title>
+      </ion-card-header>
+
+      <ion-card-content>{{ cat.bio }}</ion-card-content>
+    </ion-card>
+
+    <ion-list [inset]="true">
+      <ion-item>
+        <ion-icon name="calendar-number-outline" slot="start"></ion-icon>
+        <ion-label>{{ cat.birthday }}</ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-icon name="color-palette-outline" slot="start"></ion-icon>
+        <ion-label>{{ cat.color }}</ion-label>
+      </ion-item>
+    </ion-list>
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-card color="success" class="details__activities">
+            <ion-card-header>
+              <ion-card-title>
+                <ion-icon name="thumbs-up"></ion-icon> Likes
+              </ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              {{ cat.activities.likes.join(', ') }}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+        <ion-col>
+          <ion-card color="danger" class="details__activities">
+            <ion-card-header>
+              <ion-card-title>
+                <ion-icon name="thumbs-down"></ion-icon> Dislikes
+              </ion-card-title>
+            </ion-card-header>
+
+            <ion-card-content>
+              {{ cat.activities.dislikes.join(', ') }}
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+    <div class="ion-padding">
+      <ion-button
+        expand="block"
+        [fill]="isFavourite ? 'solid' : 'outline'"
+        (click)="toggleFavourite()"
+      >
+        <ion-icon slot="start" name="star"></ion-icon>
+        Favourite
+      </ion-button>
+    </div>
+  </ion-content>
+</ng-container>

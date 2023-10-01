@@ -1,0 +1,27 @@
+ion-grid {
+  --ion-grid-padding: 0;
+  margin: 24px 16px;
+
+  ion-card {
+    margin: 0;
+  }
+}
+
+ion-card-title {
+  align-items: center;
+  display: flex;
+  gap: 5px;
+}
+
+.details {
+  &__image {
+    aspect-ratio: 7 / 5;
+    display: block;
+  }
+
+  &__activities {
+    ion-card-title {
+      font-size: 20px;
+    }
+  }
+}

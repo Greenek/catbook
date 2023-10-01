@@ -1,0 +1,18 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Catbook</ion-title>
+  </ion-toolbar>
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="onSearchInput($event)"></ion-searchbar>
+  </ion-toolbar>
+</ion-header>
+<ion-content>
+  <ng-container
+    *ngFor="let cat of cats$ | async | filterList:'name':searchText; trackBy: trackByCatUri"
+  >
+    <app-cat-card
+      [cat]="cat"
+      [routerLink]="['/tabs/details', cat.uri]"
+    ></app-cat-card>
+  </ng-container>
+</ion-content>

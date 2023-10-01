@@ -1,0 +1,12 @@
+.cat-card {
+  &__image {
+    aspect-ratio: 7 / 5;
+    display: block;
+  }
+
+  &__title {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "name": "Białasek",
+    "uri": "bialasek",
+    "color": "Black",
+    "birthday": "2013-07-10",
+    "bio": "Białasek is one of the twins. Her name means, in a way, \"white cat\", because she has a white belly. She is 10 years old and likes to sit on wet towels.",
+    "activities": {
+      "likes": [
+        "wet towels",
+        "ear buds"
+      ],
+      "dislikes": [
+        "strangers",
+        "loud noises"
+      ]
+    },
+    "image": "assets/data/images/bialasek_1.jpeg"
+  },
+  {
+    "name": "Czarnuszka",
+    "uri": "czarnuszka",
+    "color": "Black",
+    "birthday": "2013-07-10",
+    "bio": "Czarnuszka is Białasek's sister. Her name means \"black cat\". She likes to play on a game console with me and eat potato chips.",
+    "activities": {
+      "likes": [
+        "gluten",
+        "potato chips"
+      ],
+      "dislikes": [
+        "loud noises",
+        "vets"
+      ]
+    },
+    "image": "assets/data/images/czarnuszka_1.jpeg"
+  },
+  {
+    "name": "Kluska",
+    "uri": "kluska",
+    "color": "Brown",
+    "birthday": "2014-03-01",
+    "bio": "She is my wife's favorite cat. Kluska is 9 years old, but she is the smallest cat of all. Her name means \"dumpling\". She likes to play and pose for pictures.",
+    "activities": {
+      "likes": [
+        "toys",
+        "photo sessions"
+      ],
+      "dislikes": [
+        "siblings",
+        "birds"
+      ]
+    },
+    "image": "assets/data/images/kluska_1.jpeg"
+  },
+  {
+    "name": "Licho",
+    "uri": "licho",
+    "color": "Brown",
+    "birthday": "2016-03-01",
+    "bio": "Licho is my favorite cat. He is 7 years old. His name means \"devil\" in Polish folklore. He likes to eat a lot, play with me and watch the birds.",
+    "activities": {
+      "likes": [
+        "hunting",
+        "going out"
+      ],
+      "dislikes": [
+        "bad weather",
+        "nail clipping"
+      ]
+    },
+    "image": "assets/data/images/licho_1.jpeg"
+  }
+]
